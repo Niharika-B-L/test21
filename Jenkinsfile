@@ -16,7 +16,7 @@ pipeline{
     }
     stage("Build docker image"){
       steps{
-        bat 'docker build -t %IMAGE-NAME%:latest .'
+        bat 'docker build -t %IMAGE_NAME%:latest .'
       }
     }
     stage("Login to Dockerhub"){
